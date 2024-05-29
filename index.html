@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--bootstrab link -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"></script>
+<!--font awesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<!--fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<!-- css link -->
+<link rel="stylesheet" href="sheet.css">
+    <title>Travel Agency</title>
+</head>
+<body>
+<div id="home">
+    <header>
+        <nav class="navbar navbar-expand-lg"> 
+            <div class="container-fluid">
+                <img src="https://ladan-hazrati-web.github.io/template-travel-agency/img/logo-light.png" id="logo" width="150px">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                </button>
+                <!-- Navbar content -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Travel Agency</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <!-- Navigation links -->
+                        <ul class="navbar-nav" id="links">
+                            <li class="nav-item">
+                                <a class="nav-link " href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Places</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="bodyContent" class="container">
+        <p>LETS TRAVEL THE WORLD WITH US</p>
+        <h1>EXPLORE THE WORLD<br>WITH <span>TRAVOL</span></h1>
+    </div>
+</div>
+<div class="Places">
+     <div class="text">
+        <h3>Popular Places</h3>
+        <p>You Will Find Some Of The Famous Tourist Places In The World.</p>
+    </div>
+    <div id="cards" class="container">
+        <div class="card">
+            <img src="https://mohamedreda112.github.io/Travelo/IMGS/egypt-1.webp" class="card-img-top" alt="...">
+            <div>
+                <h5>Egypt</h5>
+                <p  class="heart"><i class="fa fa-heart" aria-hidden="true"></i></p>
+            </div>
+            <div>
+                <p class="price">80 $</p>
+                <p id="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+            </div>
+            <button id="book">Book Now</button>
+        </div>
+        <div class="card">
+            <img src="https://mohamedreda112.github.io/Travelo/IMGS/maldives-1.webp" class="card-img-top" alt="...">
+            <div>
+                <h5>Maldives</h5>
+                <p class="heart"><i class="fa fa-heart" aria-hidden="true" ></i></p>
+            </div>
+            <div>
+                <p class="price">280 $</p>
+                <p id="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+            </div>
+            <button id="book">Book Now</button>
+        </div>
+        <div class="card">
+            <img src="https://mohamedreda112.github.io/Travelo/IMGS/italy-1.webp" class="card-img-top" alt="...">
+            <div>
+                <h5>Italy</h5>
+                <p  class="heart"><i class="fa fa-heart" aria-hidden="true"></i></p>
+            </div>
+            <div>
+                <p class="price">580 $</p>
+                <p id="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+            </div>
+            <button id="book">Book Now</button>
+        </div>
+        <div class="card">
+            <img src="https://mohamedreda112.github.io/Travelo/IMGS/indones-1.webp" class="card-img-top" alt="...">
+            <div>
+                <h5>Indonesia</h5>
+                <p class="heart"><i class="fa fa-heart" aria-hidden="true"></i></p>
+            </div>
+            <div>
+                <p class="price">480 $</p>
+                <p id="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+            </div>
+            <button id="book">Book Now</button>
+        </div>
+        <div class="card">
+            <img src="https://mohamedreda112.github.io/Travelo/IMGS/china.webp" class="card-img-top" alt="...">
+            <div>
+                <h5>Chian</h5>
+                <p  class="heart"><i class="fa fa-heart" aria-hidden="true"></i></p>
+            </div>
+            <div>
+                <p class="price">980 $</p>
+                <p id="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+            </div>
+            <button id="book">Book Now</button>
+        </div>
+        <div class="card">
+            <img src="https://mohamedreda112.github.io/Travelo/IMGS/india.webp" class="card-img-top" alt="...">
+            <div>
+                <h5>India</h5>
+                <p  class="heart"><i class="fa fa-heart" aria-hidden="true"></i></p>
+            </div>
+            <div>
+                <p class="price">480 $</p>
+                <p id="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+            </div>
+            <button id="book">Book Now</button>
+        </div>
+    </div>
+</div>
+<div id="changeDiv" class="container">
+    <div id="container">
+        <div>
+            <h2>Paris</h2>
+            <p>Discover the romance and charm of Paris, with its iconic landmarks and vibrant culture.Discover the romance and charm of Paris with us.</p>
+        </div>
+        <nav>
+            <img src="https://mohamedreda112.github.io/Travelo/IMGS/egypt.webp">
+            <img src="https://mohamedreda112.github.io/Travelo/IMGS/indones-1.webp">
+            <img src="https://mohamedreda112.github.io/Travelo/IMGS/italy-1.webp">
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <div class="text">
+        <h3>Services</h3>
+        <p>What We Do In Travelo?</p>
+    </div>
+    <div id="Services">
+        <div class="cards">
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title"><span>01</span><br>Tour Packages</h5>
+                <p class="card-text-secondary">
+                    We Offer You Distinctive Tourism Programs For Every Place You Decide To Go.
+                </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title"><span>02</span><br>Flight Booking</h5>
+                <p class="card-text-secondary">
+                    There Is No Doubt That You Will Stay In A Hotel During Your Trip.
+                </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title"><span>03</span><br>Destination Booking</h5>
+                <p class="card-text-secondary">
+                    Book Your Trip Destination With Us From Among The Many Places.
+                </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title"><span>04</span><br>Tour Packages</h5>
+                <p class="card-text-secondary">
+                    We Offer You Distinctive Tourism Programs For Every Place You Decide To Go.
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="text">
+        <h3>Popular Hotels</h3>
+        <p>You Will Find Some Of The Famous Hotels In The World.</p>
+    </div>
+    <!--sliders-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+                <div class="container">
+                    <div id="card">
+                        <img src="https://i.pinimg.com/564x/e7/c3/31/e7c3318e2cd74d215cfad65786f06cb7.jpg" width="300px">
+                        <div class="imgText">
+                            <h6>Top Hotels</h6>
+                            <p>100$ per week</p>
+                        </div>
+                    </div>
+                    <div id="card">
+                        <img src="https://i.pinimg.com/564x/2e/c3/1b/2ec31b84dcb0f4aeaf501e1b32fab077.jpg" width="300px">
+                        <div class="imgText">
+                            <h6>Top Hotels</h6>
+                            <p>130$ per week</p>
+                        </div>
+                    </div>
+                    <div id="card">
+                        <img src="https://i.pinimg.com/564x/a6/bd/d0/a6bdd0bfdbfd631ac2eccfab39911fc6.jpg" width="300px">
+                        <div class="imgText">
+                            <h6>Top Hotels</h6>
+                            <p>80$ per week</p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+                <div id="card">
+                    <img src="https://i.pinimg.com/564x/e3/81/fd/e381fd10b97274622fc57f4648551c2e.jpg" width="300px">
+                    <div class="imgText">
+                        <h6>Top Hotels</h6>
+                        <p>90$ per week</p>
+                    </div>
+                </div>
+                <div id="card">
+                    <img src="https://i.pinimg.com/736x/87/30/e4/8730e418af0a31de7c97c788603b540d.jpg" width="300px">
+                    <div class="imgText">
+                        <h6>Top Hotels</h6>
+                        <p>120$ per week</p>
+                    </div>
+                </div>
+                <div id="card">
+                    <img src="https://i.pinimg.com/564x/50/46/89/504689f7a0607b1b2c8ba90855d2e7ff.jpg" width="300px">
+                    <div class="imgText">
+                        <h6>Top Hotels</h6>
+                        <p>100$ per week</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+        </button>
+      </div>
+</div>
+    <div>
+        <div class="text">
+            <h3>Gallery</h3>
+            <p>Here Are Some Pictures From Around The World To Relax Your Eyes</p>
+        </div>
+        <div id="Gallery">
+            <div>
+                <div class="egypt">
+                    <img src="https://mohamedreda112.github.io/Travelo/IMGS/gallery-1.webp" id="egypt" width="210px" height="250px">
+                    <p>Egypt</p>
+                </div>
+                <div class="Amesterdam">
+                    <img src="https://mohamedreda112.github.io/Travelo/IMGS/gallery-4.webp" id="amesterdam" width="210px" height="250px">
+                    <p>Amesterdam</p>
+                </div>
+            </div>
+            <div class="Maldives">
+                <img src="https://mohamedreda112.github.io/Travelo/IMGS/gallery-2.webp" id="maldives" width="400px" height="520">
+                <p>Maldives</p>
+            </div>
+            <div>
+                <div class="Greece">
+                    <img src="https://mohamedreda112.github.io/Travelo/IMGS/gallery-3.webp" id="greece" width="430px" height="250px">
+                    <p>Greece</p>
+                </div>
+                <div id="row">
+                    <div class="london">
+                        <img src="https://mohamedreda112.github.io/Travelo/IMGS/gallery-5.webp" id="london" width="210px" height="250px">
+                        <p>London</p>
+                    </div>
+                    <div class="Dubai">
+                        <img src="https://mohamedreda112.github.io/Travelo/IMGS/gallery-6.webp" id="dubai" width="210px" height="250px">
+                        <p>Dubai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--contact-->
+    <div class="container" id="contact">
+        <div class="text">
+            <h3>Contact</h3>
+            <p>Get in touch with us !</p>
+        </div>
+        <div id="Contact">
+            <div>
+                <form>
+                    <input type="text" id="nameF" placeholder="Fisrt Name">
+                    <input type="text" id="nameL" placeholder="Last Name">
+                    <input type="number" id="id" placeholder="User ID">
+                    <input type="text" id="message" placeholder="Message ...">
+                    <button>Send</button>
+                </form>
+            </div>
+            <div>
+                <img src="pic-removebg-preview.png" width="280px">
+            </div>
+        </div>
+    </div>
+        <footer>
+            <div  class="container">
+                <div>
+                    <img src="https://ladan-hazrati-web.github.io/template-travel-agency/img/logo-light.png" width="140px" id="logo">
+                </div> 
+                    <p>Travol is a travel agency landing page<br>
+                        that You Will Find Some Of The Famous<br>Tourist Places In The World.<br></p>
+                <div class="media">
+                    <h4>Social Media</h4>
+                    <div>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-youtube" ></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div  class="container">
+                <h4>Subscribe our Newsletter</h4>
+                    <p>Don't miss out on our latest Tourist Places updates<br>
+                        and exclusive offers - join our newsletter today and<br> stay up-to-date with all things Travol!
+                    </p>
+                        <div class="Subscribe">
+                            <input type="email" placeholder="Enter your Email">
+                            <button>Subscribe</button>
+                        </div>
+            </div>
+        </footer>
+<script src="script.js"></script>
+</body>
+</html>

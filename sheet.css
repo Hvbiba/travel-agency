@@ -1,0 +1,425 @@
+body{
+    font-family: "Lexend", sans-serif;
+}
+#home {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url('https://iamjatinchauhan.github.io/tourindia/img/header-bg.jpg');
+    width: 100%; height: 100vh;
+    position: center;
+    background-size: cover; 
+}
+.nav-link , .nav-link:hover {
+    color: #eee;
+    font-size: 17px;
+    transition:  border 0.3s linear ;
+}
+.nav-link:hover {
+    border-bottom: 1.5px solid black;
+}
+#logo {
+    padding: 0px 0px 0px 10px;
+    margin-right: 270px;
+}
+#bodyContent {
+    text-align: center;
+    color: #eee;
+    letter-spacing: 2px;
+    padding-top: 150px;
+}
+#bodyContent p {
+    font-size: 18px;
+}
+#bodyContent h1 {
+    font-weight: 500;
+}
+#bodyContent h1 span{
+        font-family: "Monoton", sans-serif;
+}
+#bodyContent .dropdown-toggle ,
+header i { 
+    font-size: 20px;
+    color: #eee;
+}
+header h5 {
+    color: #25a9a0;
+}
+@media (max-width: 576px){
+    #logo {
+        padding: 0px 0px 0px 10px;
+        margin-right:0px;
+    }
+    #bodyContent p {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    #bodyContent {
+        padding-top: 200px;
+    }
+    .nav-link , .nav-link:hover {
+        color: black;
+        transition:  border 0.3s linear ;
+    }
+    .nav-link:hover {
+        border-bottom: 1.5px solid #25a9a0;
+    }
+}
+.price {
+    font-size: 18px;
+}
+.card #stars{
+    color: #FFC300;
+}
+#places{
+    display: flex;
+    justify-content: space-between;
+}
+#book {
+    border: none;
+    background-color: #25a9a0;
+    color: #eee; 
+    width: 100%; height: 40px;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+}
+#book:hover{
+    background-color: black;
+}
+#cards .card{
+    width: 300px; height: 334px;
+    margin: 20px 0px 15px 45px;
+}
+#cards .card div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px 0px 5px;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.text  {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 50px 0px 20px 0px;
+}
+.text h3 {
+   color: #25a9a0;
+}
+@media (max-width: 576px){
+    #cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #cards .card{
+        width: 300px; height: 334px;
+        margin: 5px 0px 10px 35px;
+    }
+}
+.redLike {
+    color: red;
+}
+#changeDiv #container{
+    width: 100%;
+    height: 400px ;
+    border-radius: 35px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://i.pinimg.com/564x/6a/99/ee/6a99ee843798375c5f7049316e8d31ed.jpg');
+    margin: 80px 0px 20px 15px;
+    position: relative;
+}
+#container div {
+    color: #eee;
+    padding: 110px 0px 0px 50px;
+    width: 500px;
+    transition: all 0.3s ease-in-out;
+}
+#container div h1 {
+    font-size: 50px;
+}
+#container div p {
+    font-size: 20px;
+    padding: 5px;
+}
+#changeDiv nav  {
+    position: absolute;
+    top: 110px; right: 30px;
+}
+#changeDiv nav img {
+    width: 170px; height: 190px;
+    border-radius: 20px;
+    padding: 10px;
+}
+#Services .card  {
+    box-shadow: 0px 3px 8px 2px #eee;
+    width: 260px; height: 230px;
+    text-align: center;
+    padding: 12px 8px;
+    margin: 15px;
+}
+#Services .card p {
+    color:#666 ;
+}
+#Services  .card h5{
+    color: #25a9a0;
+    font-weight: bold;
+    font-size: 20px;
+}
+#Services  .card h5 span{
+    font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-size: 37px;
+}
+#Services .cards {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 40px 0px;
+}
+@media (max-width: 576px){
+    #Services .cards {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+    }
+    #Services .card  {
+        width: 275px; height: 230px;
+        text-align: center;
+        padding: 12px 8px;
+        margin: 10px 0px 10px 45px;
+    }
+    #changeDiv #container{
+        width: 100%;
+        height: 450px ;
+        margin: 40px 0px 20px 0px;
+    }
+    #container div {
+        padding: 60px;
+        width: 400px;
+    }
+    #container div h1 {
+        font-size: 30px;
+    }
+    #changeDiv nav  {
+        top:300px; right: 0px;
+        display: flex;
+    }
+    #changeDiv nav img {
+        width: 120px; height: 140px;
+        padding: 0px;
+    }
+}
+/* animation scroll*/
+.cards .card {
+    position: relative;
+    opacity: 0;
+    transition: transform ease-in-out 0.6s, opacity 0.3s ease-in-out;
+    transform: translateX(-250px);
+}
+.cards .card.activ{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.carousel-inner .container{
+ display: flex;
+ justify-content: center;
+ margin: 20px;
+}
+.carousel-inner .container #card {
+     margin: 10px;
+}
+#carouselExample .container div{
+    position: relative;
+}
+.imgText{
+    margin: 0px;
+    color: #eee;
+    background-color: #25a9a0;
+    position: absolute;
+    bottom: 30px;
+    width: 300px;
+    padding: 10px;
+}
+#carouselExample i,
+#carouselExample i:hover {
+    font-size: 40px;
+    width: 50px; height: 50px; line-height: 50px; 
+    position: absolute;
+    top: -70px;
+    color: #fff;
+    background-color: #25a9a0;
+    border-radius: 50%; 
+    text-align: center; 
+}
+#Gallery {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 50px 40px;
+}
+#Gallery img {
+    border-radius: 30px;
+    margin: 10px;
+}
+#Gallery p {
+    position: absolute;
+    bottom: 10px; left: 30px;
+    font-size: 25px;
+    color: #fff;
+}
+#Gallery #row{
+    display: flex;
+}
+#Gallery div {
+    position: relative;
+}
+@media (max-width: 576px){
+    #carouselExample i,
+    #carouselExample i:hover {
+    display: none;
+}
+   .carousel-inner .container #card{
+        margin: 10px ;
+       }
+    #Gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin:0px;
+    }
+    #carouselExample{
+        margin: 0px;
+    }
+    #Gallery img {
+        border-radius: 30px;
+        margin: 5px 0px 10px 5px;
+        width: 180px; height: 210px;
+    }
+    .Maldives , .Dubai{
+        display: none;
+    }
+    #Gallery #row{
+        display: inline;
+    }
+}
+/* animation scroll for Gallery section*/ 
+.Greece , .Maldives{
+    position: relative;
+    opacity: 0;
+    transition: transform ease-in-out 0.6s, opacity 0.3s ease-in-out;
+    transform: translateY(-270px);
+}
+.Greece.top , .Maldives.top{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.egypt, .Amesterdam{
+    position: relative;
+    opacity: 0;
+    transition: transform ease-in-out 0.6s, opacity 0.3s ease-in-out;
+    transform: translateX(-250px);
+}
+.Amesterdam.left , .egypt.left{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.london, .Dubai{
+    position: relative;
+    opacity: 0;
+    transition: transform ease-in-out 0.6s , opacity 0.3s ease-in-out;
+    transform: translateY(200px);
+}
+.london.bottom, .Dubai.bottom {
+    opacity: 1;
+    transform: translateY(0px);
+}
+#Contact{
+    background-color: #eee;
+    width: 100%; height: 450px;
+    display: flex;
+}
+#Contact img {
+    float: right;
+    margin:0px 0px 15px 200px;
+}
+form{
+    margin: 60px 10px 0px 110px;
+}
+form input{
+    display: block;
+    width: 300px; height: 50px;
+    padding: 10px;
+    border: none; border-bottom: 1.5px solid #25a9a0;
+    margin: 10px 30px 10px 30px;
+}
+form #message {
+    height: 130px;
+}
+form button , footer button{
+    width: 120px;height: 50px;
+    padding: 5px;
+    margin: 5px 30px 5px 30px;
+    border: 2px solid #25a9a0;
+    transition: all 0.3s linear;
+}
+form button:hover , footer button:hover{
+    background-color: #25a9a0;
+    color: #fff;
+}
+footer input{
+    width: 310px; height: 40px;
+    padding: 5px;
+}
+footer {
+    display: flex;
+    background-color: #25a9a0;
+    justify-content: center;
+}
+footer .container:nth-child(1){
+    padding: 30px 40px 20px 40px;
+}
+footer .container:nth-child(2){
+    padding: 30px 120px 20px 30px;
+}
+.media h4 {
+    color: #fff;
+    border-bottom: 2px solid #eee;
+    width: 250px;
+    text-align: center;
+}
+.media  i {
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+.media div {
+    margin-left: 35px;
+}
+@media (max-width: 576px){
+    footer{
+        flex-direction: column;
+    }
+    footer button {
+        width: 100px;height: 50px;
+        margin:0;
+    }
+    footer input{
+        width: 240px; height: 40px;
+        padding: 5px;
+    }
+    footer .container:nth-child(1){
+        padding:30;
+    }
+    footer .container:nth-child(2){
+        padding: 20px 0px 30px 30px;
+    }
+    #Contact img {
+        display: none;
+    }
+    
+#Contact{
+    width: 100%; height: 450px;
+    display: flex;
+}
+#contact {
+    margin:10px 0px 30px 0px;
+}
+form{
+    margin: 0; padding-top: 27px;
+}
+}
