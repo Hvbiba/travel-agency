@@ -110,8 +110,8 @@ header h5 {
         grid-template-columns: repeat(1, 1fr);
     }
     #cards .card{
-        width: 300px; height: 334px;
-        margin: 5px 0px 10px 35px;
+        width: 300px; height: 330px;
+        margin: 10px 0px 10px 15px;
     }
 }
 .redLike {
@@ -175,34 +175,34 @@ header h5 {
 @media (max-width: 576px){
     #Services .cards {
         flex-direction: column;
-        justify-content: center;
-        margin: 0px;
+        margin: 10px;
     }
     #Services .card  {
-        width: 275px; height: 230px;
+        width: 300px; height: 230px;
         text-align: center;
         padding: 12px 8px;
-        margin: 10px 0px 10px 45px;
+        margin: 10px 0px 10px 0px;
     }
     #changeDiv #container{
         width: 100%;
-        height: 450px ;
+        height: 460px ;
         margin: 40px 0px 20px 0px;
     }
     #container div {
-        padding: 60px;
-        width: 400px;
+        margin: 0px;
+        padding: 30px;
+        width: 300px;
     }
     #container div h1 {
         font-size: 30px;
     }
     #changeDiv nav  {
-        top:300px; right: 0px;
-        display: flex;
+        top:300px; right: 10px;
+        display: flex;justify-content: center;
     }
     #changeDiv nav img {
-        width: 120px; height: 140px;
-        padding: 0px;
+        width: 100px; height: 150px;
+        padding: 10px;
     }
 }
 /* animation scroll*/
@@ -274,20 +274,19 @@ header h5 {
     display: none;
 }
    .carousel-inner .container #card{
-        margin: 10px ;
+        margin: 0px ;
        }
     #Gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+
         margin:0px;
     }
     #carouselExample{
         margin: 0px;
     }
     #Gallery img {
-        border-radius: 30px;
-        margin: 5px 0px 10px 5px;
-        width: 180px; height: 210px;
+        margin: 0px;
+        width: 160px; height: 200px;
+        padding: 10px;
     }
     .Maldives , .Dubai{
         display: none;
@@ -295,6 +294,7 @@ header h5 {
     #Gallery #row{
         display: inline;
     }
+    
 }
 /* animation scroll for Gallery section*/ 
 .Greece , .Maldives{
@@ -337,7 +337,7 @@ header h5 {
     margin:0px 0px 15px 200px;
 }
 form{
-    margin: 60px 10px 0px 110px;
+    margin: 40px 10px 0px 110px;
 }
 form input{
     display: block;
@@ -368,12 +368,13 @@ footer {
     display: flex;
     background-color: #25a9a0;
     justify-content: center;
+    margin-top: 30px;
 }
 footer .container:nth-child(1){
-    padding: 30px 40px 20px 40px;
+    padding: 30px 40px 30px 50px;
 }
 footer .container:nth-child(2){
-    padding: 30px 120px 20px 30px;
+    padding: 30px 120px 30px 30px;
 }
 .media h4 {
     color: #fff;
@@ -395,31 +396,30 @@ footer .container:nth-child(2){
         flex-direction: column;
     }
     footer button {
-        width: 100px;height: 50px;
+        width: 90px;height: 50px;
         margin:0;
     }
     footer input{
-        width: 240px; height: 40px;
+        width: 185px; height: 40px;
         padding: 5px;
     }
+
+    footer .container:nth-child(2) ,
     footer .container:nth-child(1){
-        padding:30;
+        padding:30px 20px 20px 20px;
+        margin: 0px;
     }
-    footer .container:nth-child(2){
-        padding: 20px 0px 30px 30px;
+    form{
+        margin: 0px;
+        padding: 30px 0px 30px 0px;
+    }
+    form input{
+        margin: 10px;
+    }
+    form button , footer button{
+        margin: 10px;
     }
     #Contact img {
         display: none;
     }
-    
-#Contact{
-    width: 100%; height: 450px;
-    display: flex;
-}
-#contact {
-    margin:10px 0px 30px 0px;
-}
-form{
-    margin: 0; padding-top: 27px;
-}
 }
