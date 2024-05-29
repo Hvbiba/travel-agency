@@ -178,7 +178,7 @@ header h5 {
         margin: 10px;
     }
     #Services .card  {
-        width: 300px; height: 230px;
+        width: 305px; height: 230px;
         text-align: center;
         padding: 12px 8px;
         margin: 10px 0px 10px 0px;
@@ -274,7 +274,7 @@ header h5 {
     display: none;
 }
    .carousel-inner .container #card{
-        margin: 0px ;
+        margin: 10px ;
        }
     #Gallery {
 
@@ -411,7 +411,7 @@ footer .container:nth-child(2){
     }
     form{
         margin: 0px;
-        padding: 30px 0px 30px 0px;
+        padding: 30px 0px 30px 3px;
     }
     form input{
         margin: 10px;
